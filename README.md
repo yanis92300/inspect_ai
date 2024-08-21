@@ -10,7 +10,7 @@ Inspect provides a variety of built-in components, including facilities for prom
 To begin working with this fork of Inspect, clone the repository and install it with the `-e` flag and `[dev]` optional dependencies:
 
 ```bash
-$ git clone https://github.com/YourUsername/inspect_ai.git
+$ git clone https://github.com/yanis92300/inspect_ai.git
 $ cd inspect_ai
 $ pip install -e ".[dev]"
 
