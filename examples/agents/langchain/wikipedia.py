@@ -53,7 +53,7 @@ def wikipedia_search(
 @task
 def wikipedia() -> Task:
     return Task(
-        dataset=json_dataset("wikipedia.jsonl"),
+        dataset=json_dataset("drugs_disease_easy.jsonl"),
         plan=wikipedia_search(),
         scorer=model_graded_fact(),
     )
