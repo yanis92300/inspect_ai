@@ -1,4 +1,5 @@
-# Inspect: A Framework for Evaluating LLM Safety on Drug Interactions
+# Inspect_SAFETY: A Framework for Evaluating LLM Safety on Drug Interactions
+
 
 This repository is a fork of the Inspect framework, originally developed for large language model evaluations. We have adapted it to focus specifically on assessing the safety of large language models (LLMs) in the context of drug interactions.
 
