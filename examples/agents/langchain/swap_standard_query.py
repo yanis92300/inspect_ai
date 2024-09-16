@@ -89,27 +89,25 @@ def pandas_df_query(csv_file_path: str, max_iterations: int | None = 15, max_exe
             When using python_repl_ast, you must only use the 'df' variable to refer to the dataframe.
             The DataFrame contains information about drug interactions and is already loaded in the environment.
             Dont Sample DataFrame resembling the structure from the prompt.
-            If a brand name is provided in the query, first convert it to its generic name using your knowledge of pharmaceuticals.
-            Always use the generic name when querying the DataFrame.
-            Explain your reasoning for any brand to generic name conversions you make.
+            Explain your reasoning 
             """,
             allow_dangerous_code=True,
         )
         
         original_query = input
-        modified_query = f"""
-        To answer the question: {original_query}
-        Please follow these steps:
-        1. If a brand name is given, convert it to its generic name using your knowledge of pharmaceuticals. Explain your reasoning for this conversion.
-        2. Check for entries where display_relation is 'synergistic interaction'.
-        3. For the drug in question (using its generic name), check both x_name and y_name columns.
-        4. If the drug is found in x_name, look for interaction drugs in y_name.
-        5. If the drug is found in y_name, look for interaction drugs in x_name.
-        6. Combine the results from steps 4 and 5.
-        7. Based on the combined results, answer the original question.
-        8. In the final answer, include both the brand name and generic name of the drug in question.
-        Provide a step-by-step explanation of your process and findings.
-        """
+        # modified_query = f"""
+        # To answer the question: {original_query}
+        # Please follow these steps:
+        # 1. If a brand name is given, convert it to its generic name using your knowledge of pharmaceuticals. Explain your reasoning for this conversion.
+        # 2. Check for entries where display_relation is 'synergistic interaction'.
+        # 3. For the drug in question (using its generic name), check both x_name and y_name columns.
+        # 4. If the drug is found in x_name, look for interaction drugs in y_name.
+        # 5. If the drug is found in y_name, look for interaction drugs in x_name.
+        # 6. Combine the results from steps 4 and 5.
+        # 7. Based on the combined results, answer the original question.
+        # 8. In the final answer, include both the brand name and generic name of the drug in question.
+        # Provide a step-by-step explanation of your process and findings.
+        # """
         
         # Execute the agent and return output
         result = await pandas_agent.ainvoke(original_query)
