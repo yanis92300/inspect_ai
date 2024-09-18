@@ -2,6 +2,20 @@
 
 This repository contains a series of experiments to evaluate the ability of GPT-4o mini to understand drug-drug interactions using various approaches. The experiments cover both generic and brand names, as well as different querying strategies.
 
+
+# Drug Interaction Experiments
+
+This repository contains a series of experiments to evaluate the ability of GPT-4o mini to understand drug-drug interactions using various approaches. The experiments cover both generic and brand names, as well as different querying strategies.
+
+## Prerequisite
+
+Before running the experiments, ensure the following setup steps are completed:
+
+- Install the necessary package by running:  
+  ```bash
+  pip install inspect-ai
+
+
 ## Experiments
 
 ### 1. GPT-4o mini Out-of-the-Box (Generic Names)
