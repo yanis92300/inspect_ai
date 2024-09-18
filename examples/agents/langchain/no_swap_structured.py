@@ -55,7 +55,7 @@ def csv_query(csv_file_path: str, max_iterations: int | None = 15, max_execution
 @task
 def csv_task() -> Task:
     return Task(
-        dataset=json_dataset("interaction_100.jsonl"),
-        plan=csv_query("top50_sample_100.csv"),
+        dataset=json_dataset("no_swap_experiments.jsonl"),
+        plan=csv_query("filtered_drug_drug_generic_top50.csv"),
         scorer=model_graded_fact(),
     )

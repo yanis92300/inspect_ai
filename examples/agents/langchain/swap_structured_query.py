@@ -122,8 +122,8 @@ def pandas_df_query(csv_file_path: str, max_iterations: int | None = 15, max_exe
 @task
 def pandas_df_task() -> Task:
     return Task(
-        dataset=json_dataset("interaction_100_brand.jsonl"),
-        plan=pandas_df_query("top50_sample_100.csv"),
+        dataset=json_dataset("swap_experiment.jsonl"),
+        plan=pandas_df_query("filtered_drug_drug_generic_top50.csv"),
         scorer=model_graded_fact(),
     )
     
