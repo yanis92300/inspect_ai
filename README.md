@@ -36,7 +36,9 @@ This repository contains a series of experiments to evaluate the ability of GPT-
 
 ## Running the Experiments
 
-To run each experiment, navigate to the respective Python file and execute it. Make sure you have all the necessary dependencies installed and the required datasets in place.
+- To run each experiment, use the following command: inspect eval .<name_of_the_file> --model <name_of_the_model>
+- For example, to run the experiment in Experiment 5 (Brand to Generic Swap, Standard Query): inspect eval .\swap_standard_query.py --model openai/gpt-4o-mini
+
 
 ## Data Files
 
