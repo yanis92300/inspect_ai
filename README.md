@@ -10,10 +10,14 @@ This repository contains a series of experiments to evaluate the ability of GPT-
 ## Prerequisite
 
 Before running the experiments, ensure the following setup steps are completed:
+- create .env file with your `OPENAI_API_KEY`
 
 - Install the necessary package by running:  
   ```bash
   pip install inspect-ai
+  pip intstall openai
+  export OPENAI_API_KEY
+  ```
 
 
 ## Experiments
