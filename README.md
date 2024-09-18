@@ -18,6 +18,7 @@ Before running the experiments, ensure the following setup steps are completed:
   pip intstall openai
   export OPENAI_API_KEY
   ```
+- go in the langchain experimental folder usually  `libs/experimental/langchain_experimental/agents/agent_toolkits/pandas/base.py` and change all the ```python number_of_head_rows: int = 5```  by ```python number_of_head_rows: int = 1000``` (adapt to number of CSV line for rags, here is 1000)
 
 
 ## Experiments
