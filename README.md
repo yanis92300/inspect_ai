@@ -5,11 +5,11 @@ This repository contains a series of experiments to evaluate the ability of GPT-
 ## Experiments
 
 ### 1. GPT-4o mini Out-of-the-Box (Generic Names)
-- **File**: `\inspect_fork\benchmarks\drug_drug_brand.py`
+- **File**: `\inspect_fork\benchmarks\drug_drug_generic.py`
 - **Description**: Evaluates GPT-4o mini's ability to understand drug-drug interactions using generic names in the questions.
 
 ### 2. GPT-4o mini Out-of-the-Box (Brand Names)
-- **File**: `\inspect_fork\benchmarks\drug_drug_generic.py`
+- **File**: `\inspect_fork\benchmarks\drug_drug_brand.py`
 - **Description**: Same as Experiment 1, but uses brand names in the questions.
 
 ### 3. GPT-4o mini + RAG (Generic Names, Standard Query)
@@ -27,7 +27,7 @@ This repository contains a series of experiments to evaluate the ability of GPT-
 ### 5. GPT-4o mini + RAG (Brand to Generic Swap, Standard Query)
 - **File**: `\inspect_fork\examples\agents\langchain\swap_standard_query.py`
 - **Dataset**: `\inspect_fork\examples\agents\langchain\swap_experiment.jsonl`
-- **Description**: Uses GPT-4o mini with RAG, swapping brand names to generic names, and using standard straightforward queries.
+- **Description**: Uses GPT-4o mini with RAG, swapping generic names to brand names, and using standard straightforward queries.
 
 ### 6. GPT-4o mini + RAG (Brand to Generic Swap, Detailed Query)
 - **File**: `\inspect_fork\examples\agents\langchain\swap_structured_query.py`
@@ -42,12 +42,6 @@ To run each experiment, navigate to the respective Python file and execute it. M
 
 - `filtered_drug_drug_generic_top50.csv`: RAG database for generic drug names
 - `no_swap_experiments.jsonl`: Dataset for experiments without name swapping
-- `swap_experiment.jsonl`: Dataset for experiments with brand to generic name swapping
+- `swap_experiment.jsonl`: Dataset for experiments with generic to brand name swapping
 
-## Notes
 
-- Ensure that all file paths are correct before running the experiments.
-- Review each script to understand any specific requirements or configurations needed.
-- Results may vary depending on the version of GPT-4o mini and the specific implementation of RAG used.
-
-For any questions or issues, please open an issue in this repository.
