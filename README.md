@@ -20,11 +20,11 @@ Before running the experiments, ensure the following setup steps are completed:
 
 ### 1. GPT-4o mini Out-of-the-Box (Generic Names)
 - **File**: `\inspect_fork\benchmarks\drug_drug_generic.py`
-- **Description**: Evaluates GPT-4o mini's ability to understand drug-drug interactions using generic names in the questions.
+- **Description**: Evaluates GPT-4o mini's ability to understand drug-drug interactions using generic names in the questions. This script loads an HuggingFace dataset.
 
 ### 2. GPT-4o mini Out-of-the-Box (Brand Names)
 - **File**: `\inspect_fork\benchmarks\drug_drug_brand.py`
-- **Description**: Same as Experiment 1, but uses brand names in the questions.
+- **Description**: Same as Experiment 1, but uses brand names in the questions. This script loads an HuggingFace dataset.
 
 ### 3. GPT-4o mini + RAG (Generic Names, Standard Query)
 - **File**: `\inspect_fork\examples\agents\langchain\no_swap_standard.py`
