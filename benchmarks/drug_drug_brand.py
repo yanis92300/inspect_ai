@@ -32,7 +32,7 @@ Answer the following multiple choice question. The last line of your response sh
 @task
 def drugs_drugs():
     dataset = hf_dataset(
-        path="yanischamson/pkg_common50_drugs_genric_drug_drug_all_brand",
+        path="yanischamson/PKG_final_drug_brand",
         split="train",  # or "validation" or "test", depending on which split you want
         sample_fields=record_to_sample,
         trust=True,
