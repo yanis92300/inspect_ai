@@ -1,3 +1,8 @@
+import sys
+import os
+
+# Add the parent directory to sys.path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from typing import Any, cast
 from inspect_langchain import langchain_solver
 from langchain.agents import AgentExecutor

@@ -59,7 +59,11 @@
 #         plan=csv_query("top50_sample_100.csv"),
 #         scorer=model_graded_fact(),
 #     )
+import sys
+import os
 
+# Add the parent directory to sys.path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from typing import Any, cast
 from inspect_langchain import langchain_solver
 from langchain.agents.agent_types import AgentType

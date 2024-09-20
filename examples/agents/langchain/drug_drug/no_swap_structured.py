@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Add the parent directory to sys.path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from typing import Any, cast
 from inspect_langchain import langchain_solver
 from langchain.agents import AgentExecutor
@@ -8,6 +14,7 @@ from inspect_ai.scorer import model_graded_fact,answer
 from inspect_ai.solver import Solver, solver
 from langchain_openai import ChatOpenAI
 from langchain_experimental.agents import create_csv_agent
+
 
 #TODO : chat memory so that we dont need to load the csv file everytime
 #TODO : rework the prompt so that the agent do always the same steps ? chain ? 
